@@ -54,7 +54,7 @@ export default class Home extends Component {
                 fontSize: 22,
                 marginTop: '10%',
                 marginLeft: '3%',
-                color: '#D9D9D9',
+                color: 'white',
               }}>
               Maria de Lurdes{' '}
             </Text>
