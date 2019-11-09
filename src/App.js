@@ -17,9 +17,7 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
         <Routes/>
-      </SafeAreaView>
     </>
   );
 };
