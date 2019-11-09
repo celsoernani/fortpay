@@ -37,7 +37,7 @@ export const Input = styled.TextInput.attrs({
 `;
 
 export const Submit = styled.TouchableOpacity`
-  background: #025920;
+  background: #02592080;
   height: 52px;
   border-radius: 4px;
   width:50%
