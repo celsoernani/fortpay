@@ -7,19 +7,13 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-} from 'react-native';
-import Routes from './routes'
+import {SafeAreaView, StatusBar} from 'react-native';
+import Routes from './routes';
 
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <Routes/>
-      </SafeAreaView>
+      <Routes />
     </>
   );
 };
