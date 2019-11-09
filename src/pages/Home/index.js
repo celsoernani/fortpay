@@ -12,44 +12,56 @@ export default class Home extends Component {
         <View style={{flex: 1}}>
           <View
             style={{
-              flex: 1,
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
+              flex: 2,
               backgroundColor: '#138646',
+              justifyContent: 'space-between',
             }}>
-            <Image
+            <View
               style={{
-                backgroundColor: 'transparent',
-                tintColor: 'white',
-                width: 100,
-                height: 40,
-              }}
-              source={require('./../../assets/logo.png')}
-            />
-            <View style={{flexDirection: 'row', marginRight: '2%'}}>
-              <TouchableOpacity
-                style={{backgroundColor: 'white', height: '60%'}}>
-                <Icon name="qrcode" size={30} color="#01261C" />
-              </TouchableOpacity>
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}>
+              <Image
+                style={{
+                  backgroundColor: 'transparent',
+                  tintColor: 'white',
+                  width: 100,
+                  height: 40,
+                }}
+                source={require('./../../assets/logo.png')}
+              />
 
-              <TouchableOpacity>
-                <Icon
-                  style={{marginLeft: 20}}
-                  name="message1"
-                  size={30}
-                  color="white"
-                />
-              </TouchableOpacity>
+              <View style={{flexDirection: 'row', marginRight: '2%'}}>
+                <TouchableOpacity
+                  style={{backgroundColor: 'white', height: '60%'}}>
+                  <Icon name="qrcode" size={30} color="#01261C" />
+                </TouchableOpacity>
+
+                <TouchableOpacity>
+                  <Icon
+                    style={{marginLeft: 20}}
+                    name="message1"
+                    size={30}
+                    color="white"
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
-          </View>
-          <View style={{flex: 9}}>
-            <Text style={{fontSize: 20, marginBottom: '5%', color: '#D9D9D9'}}>
-              {' '}
+
+            <Text
+              style={{
+                fontSize: 22,
+                marginTop: '10%',
+                marginLeft: '3%',
+                color: '#D9D9D9',
+              }}>
               Maria de Lurdes{' '}
             </Text>
             <View style={{height: 3, backgroundColor: '#01261C'}}></View>
           </View>
+
+          <View style={{flex: 8}}></View>
         </View>
       </SafeAreaView>
     );
