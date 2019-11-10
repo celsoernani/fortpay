@@ -4,7 +4,7 @@ import Icon2 from 'react-native-vector-icons/FontAwesome';
 import Icon3 from 'react-native-vector-icons/Entypo';
 
 import { Container, TabsContainer, TabsItens, TabsText } from './styles';
-import { TouchableOpacity, StyleSheet } from 'react-native';
+import { TouchableOpacity, StyleSheet, Alert} from 'react-native';
 export default function Tabs() {
   return (
     <Container>
@@ -20,7 +20,7 @@ export default function Tabs() {
           </TabsItens>
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>Alert.alert("Segunda via do boleto")}>
           <TabsItens style={styles.shadow}>
             <Icon2 name="barcode" size={25} color="#045901" />
             <TabsText>2ª Via Boleto</TabsText>
@@ -29,14 +29,14 @@ export default function Tabs() {
       </TabsContainer>
 
       <TabsContainer>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>Alert.alert("Aumentar limite")}>
           <TabsItens style={styles.shadow}>
             <Icon3 name="sound-mix" size={25} color="#045901" />
             <TabsText>Aumentar Limite</TabsText>
           </TabsItens>
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>Alert.alert("Desbloquear Cartão")}>
           <TabsItens style={styles.shadow}>
             <Icon2 name="unlock" size={25} color="#045901" />
             <TabsText>Desbloqueio de Cartão</TabsText>

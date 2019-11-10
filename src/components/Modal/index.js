@@ -20,7 +20,7 @@ export default class MoldalFP extends React.Component {
                 onPress={this.props.hide}
                 hitSlop={{top: 15, left: 15, bottom: 15, right: 15}}
               >
-                <Icon name="close" size={32} color="#9BCCAA" />
+                <Icon name="close" size={32} color="white" style={{backgroundColor: "#138646"}}/>
               </TouchableOpacity>
                 {this.props.component}
             </Modal>

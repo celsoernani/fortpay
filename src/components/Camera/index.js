@@ -6,31 +6,38 @@ import {
 } from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import { Container} from './styles';
+import MoldalFP from '../Modal'
+import NovoPadrinho from '../NovoPadrinho'
 
 export default class Camera extends Component {
   state = {
     loading: false,
+    modal: false,
   }
 
   onSuccess = (e) => {
     this.setState({color: 'black'})
   }
 
+  toggleModal = () => {
+    this.setState({modal: !this.state.modal})
+  }
+
   render() {
     return (
       <Container>
         <QRCodeScanner
-            onRead={this.onSuccess}
-            topContent={
-                <Text style={styles.centerText}>
-                    Go to <Text style={styles.textBold}>wikipedia.org/wiki/QR_code</Text> on your computer and scan the QR code.
-                </Text>
-            }
-            bottomContent={
-            <TouchableOpacity style={styles.buttonTouchable}>
-                <Text style={styles.buttonText}>OK. Got it!</Text>
-            </TouchableOpacity>
-            }
+            onRead={this.toggleModal}
+            cameraStyle={{flex: 1}}
+            containerStyle={{margin: 0, padding: 0}}
+            showMarker={true}
+        />
+        <MoldalFP
+          animation="slide"
+          transparent={false}
+          show={this.state.modal}
+          hide={this.toggleModal}
+          component={<NovoPadrinho />}
         />
       </Container>
     );
