@@ -44,7 +44,7 @@ const MainNavigation = createAppContainer(
                 <Icon name="qrcode" size={30} color="#01261C" />
               </TouchableOpacity>
               <Icon
-                style={{marginLeft: 20}}
+                style={{marginLeft: 20, marginRight: 10}}
                 name="message1"
                 size={30}
                 color="white"
