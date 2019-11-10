@@ -1,10 +1,8 @@
 import {StyleSheet} from 'react-native';
 
 export const colors = {
-  black: '#1a1917',
-  gray: '#888888',
-  background1: '#B721FF',
-  background2: '#21D4FD',
+  black: '#138646',
+  gray: '#D9D9D9',
 };
 
 const styles = StyleSheet.create({
@@ -26,7 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   exampleContainer: {
-    paddingVertical: 30,
+    paddingVertical: 50,
   },
   exampleContainerDark: {
     backgroundColor: colors.black,

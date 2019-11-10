@@ -10,8 +10,11 @@ import {
 import Icon from 'react-native-vector-icons/AntDesign';
 import Carousel from 'react-native-snap-carousel';
 import {sliderWidth, itemWidth} from './SliderEntry.style';
-
+import SliderEntry from './../../components/Home/SliderEntry';
 import styles from './styles';
+import Icon1 from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon2 from 'react-native-vector-icons/Feather';
+import Icon3 from 'react-native-vector-icons/FontAwesome';
 
 export default class Home extends Component {
   constructor(props) {
@@ -19,34 +22,41 @@ export default class Home extends Component {
     this.state = {
       entries: [
         {
-          title: 'Beautiful and dramatic Antelope Canyon',
-          subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-          illustration: 'https://i.imgur.com/UYiroysl.jpg',
+          title: 'Minhas Faturas',
+          subtitle:
+            'Veja aqui os detalhes das suas faturas e tire suas dúvidas',
+          icon: (
+            <Icon1
+              name={'file-document-box-multiple-outline'}
+              size={25}
+              style={{alignSelf: 'center', marginRight: 10}}
+              color="white"
+            />
+          ),
         },
         {
-          title: 'Earlier this morning, NYC',
-          subtitle: 'Lorem ipsum dolor sit amet',
-          illustration: 'https://i.imgur.com/UPrs1EWl.jpg',
+          title: 'Meus Responsáveis',
+          subtitle: 'Veja aqui pessoas de confiança que podem te ajudar.',
+          icon: (
+            <Icon2
+              name={'users'}
+              size={25}
+              style={{alignSelf: 'center', marginRight: 10}}
+              color="white"
+            />
+          ),
         },
         {
-          title: 'White Pocket Sunset',
-          subtitle: 'Lorem ipsum dolor sit amet et nuncat ',
-          illustration: 'https://i.imgur.com/MABUbpDl.jpg',
-        },
-        {
-          title: 'Acrocorinth, Greece',
-          subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-          illustration: 'https://i.imgur.com/KZsmUi2l.jpg',
-        },
-        {
-          title: 'The lone tree, majestic landscape of New Zealand',
-          subtitle: 'Lorem ipsum dolor sit amet',
-          illustration: 'https://i.imgur.com/2nCt3Sbl.jpg',
-        },
-        {
-          title: 'Middle Earth, Germany',
-          subtitle: 'Lorem ipsum dolor sit amet',
-          illustration: 'https://i.imgur.com/lceHsT6l.jpg',
+          title: 'Precisa de ajuda ?',
+          subtitle: 'Encontre em seus contatos pessoas que possam te ajudar.',
+          icon: (
+            <Icon3
+              name={'handshake-o'}
+              size={25}
+              style={{alignSelf: 'center', marginRight: 10}}
+              color="white"
+            />
+          ),
         },
       ],
     };
@@ -84,9 +94,8 @@ export default class Home extends Component {
               />
 
               <View style={{flexDirection: 'row', marginRight: '2%'}}>
-                <TouchableOpacity
-                  style={{backgroundColor: 'white', height: '60%'}}>
-                  <Icon name="qrcode" size={30} color="#01261C" />
+                <TouchableOpacity>
+                  <Icon2 name="camera" size={30} color="white" />
                 </TouchableOpacity>
 
                 <TouchableOpacity>
