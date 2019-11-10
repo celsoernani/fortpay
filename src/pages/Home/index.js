@@ -34,9 +34,11 @@ export default class Home extends Component {
               color="white"
             />
           ),
+          navigate: this.props.navigation.navigate,
+          titleNavigation: 'Fatura',
         },
         {
-          title: 'Meus Responsáveis',
+          title: 'Meus Padrinhos',
           subtitle: 'Veja aqui pessoas de confiança que podem te ajudar.',
           icon: (
             <Icon2
@@ -46,6 +48,8 @@ export default class Home extends Component {
               color="white"
             />
           ),
+          navigate: this.props.navigation.navigate,
+          titleNavigation: 'Padrinhos',
         },
         {
           title: 'Precisa de ajuda ?',
@@ -58,6 +62,8 @@ export default class Home extends Component {
               color="white"
             />
           ),
+          navigate: this.props.navigation.navigate,
+          titleNavigation: 'Help',
         },
       ],
     };
@@ -78,15 +84,6 @@ export default class Home extends Component {
         <View style={styles.container}>
           <View style={{flex: 1, backgroundColor: 'white'}}>
             <Tabs />
-            {/* <Image
-              style={{
-                alignSelf: 'center',
-                marginTop: '10%',
-                borderColor: '#09A603',
-                borderWidth: 1,
-              }}
-              source={require('./../../assets/qr_img.png')}
-            /> */}
 
             <View style={styles.exampleContainer}>
               <Carousel

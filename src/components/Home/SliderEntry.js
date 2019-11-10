@@ -4,8 +4,9 @@ import styles from './../../pages/Home/SliderEntry.style';
 
 export default class SliderEntry extends Component {
   render() {
+    console.log(this.props);
     const {
-      data: {title, subtitle, icon},
+      data: {title, subtitle, icon, navigate, titleNavigation},
     } = this.props;
 
     const uppercaseTitle = title ? (
@@ -20,9 +21,7 @@ export default class SliderEntry extends Component {
       <TouchableOpacity
         activeOpacity={1}
         style={styles.slideInnerContainer}
-        onPress={() => {
-          alert(`You've clicked '${title}'`);
-        }}>
+        onPress={() => navigate(titleNavigation)}>
         <View style={styles.shadow} />
 
         <View style={styles.textContainer}>
