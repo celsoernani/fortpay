@@ -1,67 +1,141 @@
 import React, {Component} from 'react';
-import {View, Text, SafeAreaView, Image, TouchableOpacity} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  Image,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
-
-// import { Container } from './styles';
+import Tabs from './../../components/Tabs/index';
+import Carousel from 'react-native-snap-carousel';
+import {sliderWidth, itemWidth} from './SliderEntry.style';
+import SliderEntry from './../../components/Home/SliderEntry';
+import styles from './styles';
+import Icon1 from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon2 from 'react-native-vector-icons/Feather';
+import Icon3 from 'react-native-vector-icons/FontAwesome';
+import MoldalFP from '../../components/Modal'
+import Camera from '../../components/Camera'
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showModalApadrinhar: false,
+      entries: [
+        {
+          title: 'Minhas Faturas',
+          subtitle:
+            'Veja aqui os detalhes das suas faturas e tire suas dúvidas',
+          icon: (
+            <Icon1
+              name={'file-document-box-multiple-outline'}
+              size={25}
+              style={{alignSelf: 'center', marginRight: 10}}
+              color="white"
+            />
+          ),
+        },
+        {
+          title: 'Meus Responsáveis',
+          subtitle: 'Veja aqui pessoas de confiança que podem te ajudar.',
+          icon: (
+            <Icon2
+              name={'users'}
+              size={25}
+              style={{alignSelf: 'center', marginRight: 10}}
+              color="white"
+            />
+          ),
+        },
+        {
+          title: 'Precisa de ajuda ?',
+          subtitle: 'Encontre em seus contatos pessoas que possam te ajudar.',
+          icon: (
+            <Icon3
+              name={'handshake-o'}
+              size={25}
+              style={{alignSelf: 'center', marginRight: 10}}
+              color="white"
+            />
+          ),
+        },
+        {
+          title: 'Apadrinhar alguém',
+          subtitle: 'Ajude pessoas a mehorar a experiência dentro do aplicativo. Ajudar pessoas gera pontos.',
+          icon: (
+            <Icon3
+              name={'gg'}
+              size={25}
+              style={{alignSelf: 'center', marginRight: 10}}
+              color="white"
+            />
+          ),
+          modal: this.toggleModalShowModalApadrinhar
+        },
+      ],
+    };
+  }
+
+  toggleModalShowModalApadrinhar = () => {
+    this.setState({showModalApadrinhar: !this.state.showModalApadrinhar})
+  }
+
+  _renderItemWithParallax({item, index}, parallaxProps) {
+    return (
+      <SliderEntry
+        data={item}
+        even={(index + 1) % 2 === 0}
+        parallax={true}
+        parallaxProps={parallaxProps}
+      />
+    );
+  }
   render() {
     return (
-      <SafeAreaView style={{flex: 1}}>
-        <View style={{flex: 1}}>
-          <View
-            style={{
-              flex: 2,
-              backgroundColor: '#138646',
-              justifyContent: 'space-between',
-            }}>
-            <View
+      <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
+          <View style={{flex: 1, backgroundColor: 'white'}}>
+            <Tabs />
+            {/* <Image
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}>
-              <Image
-                style={{
-                  backgroundColor: 'transparent',
-                  tintColor: 'white',
-                  width: 100,
-                  height: 40,
-                }}
-                source={require('./../../assets/logo.png')}
-              />
-
-              <View style={{flexDirection: 'row', marginRight: '2%'}}>
-                <TouchableOpacity
-                  style={{backgroundColor: 'white', height: '60%'}}>
-                  <Icon name="qrcode" size={30} color="#01261C" />
-                </TouchableOpacity>
-
-                <TouchableOpacity>
-                  <Icon
-                    style={{marginLeft: 20}}
-                    name="message1"
-                    size={30}
-                    color="white"
-                  />
-                </TouchableOpacity>
-              </View>
-            </View>
-
-            <Text
-              style={{
-                fontSize: 22,
+                alignSelf: 'center',
                 marginTop: '10%',
-                marginLeft: '3%',
-                color: 'white',
-              }}>
-              Maria de Lurdes{' '}
-            </Text>
-            <View style={{height: 3, backgroundColor: '#01261C'}}></View>
-          </View>
+                borderColor: '#09A603',
+                borderWidth: 1,
+              }}
+              source={require('./../../assets/qr_img.png')}
+            /> */}
 
-          <View style={{flex: 8}}></View>
+            <View style={styles.exampleContainer}>
+              <Carousel
+                ref={c => (this._slider1Ref = c)}
+                data={this.state.entries}
+                renderItem={this._renderItemWithParallax}
+                sliderWidth={sliderWidth}
+                itemWidth={itemWidth}
+                hasParallaxImages={true}
+                inactiveSlideScale={0.94}
+                inactiveSlideOpacity={0.7}
+                containerCustomStyle={styles.slider}
+                contentContainerCustomStyle={styles.sliderContentContainer}
+                loop={true}
+                loopClonesPerSide={2}
+                autoplay={true}
+                autoplayDelay={500}
+                autoplayInterval={3000}
+              />
+            </View>
+          </View>
+          <MoldalFP
+            animation="slide"
+            transparent={false}
+            show={this.state.showModalApadrinhar}
+            hide={this.toggleModalShowModalApadrinhar}
+            component={<Camera />}
+          />
         </View>
       </SafeAreaView>
     );
