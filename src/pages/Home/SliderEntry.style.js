@@ -20,10 +20,7 @@ const entryBorderRadius = 8;
 
 export default StyleSheet.create({
   slideInnerContainer: {
-    width: itemWidth,
-    height: slideHeight,
-    paddingHorizontal: itemHorizontalMargin,
-    paddingBottom: 18, // needed for shadow
+
   },
   shadow: {
     position: 'absolute',
