@@ -74,54 +74,8 @@ export default class Home extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <ScrollView style={styles.container}>
-          <View style={styles.header}>
-            <View
-              style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                marginTop: '1%',
-              }}>
-              <Image
-                style={{
-                  backgroundColor: 'transparent',
-                  tintColor: 'white',
-                  width: 100,
-                  height: 40,
-                }}
-                source={require('./../../assets/logo.png')}
-              />
-
-              <View style={{flexDirection: 'row', marginRight: '2%'}}>
-                <TouchableOpacity>
-                  <Icon2 name="camera" size={30} color="white" />
-                </TouchableOpacity>
-
-                <TouchableOpacity>
-                  <Icon
-                    style={{marginLeft: 20}}
-                    name="message1"
-                    size={30}
-                    color="white"
-                  />
-                </TouchableOpacity>
-              </View>
-            </View>
-
-            <Text
-              style={{
-                fontSize: 22,
-                marginTop: '10%',
-                marginLeft: '3%',
-                color: 'white',
-              }}>
-              Maria de Lurdes{' '}
-            </Text>
-            <View style={{height: 3, backgroundColor: '#01261C'}}></View>
-          </View>
-
-          <View style={{flex: 7, backgroundColor: 'white'}}>
+        <View style={styles.container}>
+          <View style={{flex: 1, backgroundColor: 'white'}}>
             <Image
               style={{
                 alignSelf: 'center',
@@ -152,7 +106,7 @@ export default class Home extends Component {
               />
             </View>
           </View>
-        </ScrollView>
+        </View>
       </SafeAreaView>
     );
   }
