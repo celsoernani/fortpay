@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
-import { View, FlatList, Text } from 'react-native';
+import { View, FlatList, Text, TouchableOpacity } from 'react-native';
 
-import { Container, Header, Avatar, TextName } from './styles';
-
+import {
+  Container,
+  Header,
+  Avatar,
+  TextName,
+  ChatLabel,
+  IconContainer,
+  Title,
+  TitleContainer
+} from './styles';
+import Icon from 'react-native-vector-icons/MaterialIcons'
 const data = [
   {
     id: 0,
@@ -36,29 +45,51 @@ const data = [
   },
 ]
 export default class Help extends Component {
+
+  renderSeparator = () => {
+    return (
+      <View
+        style={{
+          height: 1,
+          width: "86%",
+          backgroundColor: "#CED0CE",
+          marginLeft: "24%"
+        }}
+      />
+    );
+  };
+
   render() {
     return (
       <Container>
-        <Header />
-        <View>
-          <Text>Tire sua duvida com um amigo</Text>
-        </View>
         <FlatList
           data={data}
+          ItemSeparatorComponent={this.renderSeparator}
           keyExtractor={item => String(item.id)}
           renderItem={({ item, id }) => {
             console.tron.log('teste', item)
             return (
-              <View
-                key={id}
-                style={{ flexDirection: 'row', alignItems: 'center', padding:10 }}
-              >
-                <Avatar source={{ uri: item.image }} />
-                <TextName>{item.name}</TextName>
-              </View>
+              <TouchableOpacity>
+                <View
+                  key={id}
+                  style={{ flexDirection: 'row', alignItems: 'center', padding: 10, justifyContent: 'space-between' }}
+                >
+                  <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <Avatar source={{ uri: item.image }} />
+                    <TextName>{item.name}</TextName>
+                  </View>
+                  <IconContainer>
+                    <Icon name='chat' size={30} style={{ marginRight: 8 }} color='#00000080' />
+                    <ChatLabel>Chat</ChatLabel>
+                  </IconContainer>
+                </View>
+              </TouchableOpacity>
+
             )
           }}
         />
+
+
 
       </Container>
     );
