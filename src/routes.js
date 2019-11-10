@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native';
+import {View, Text, SafeAreaView, Image, Platform} from 'react-native';
 
 import {
   createAppContainer,
   createSwitchNavigator,
   createst,
 } from 'react-navigation';
-import { createBottomTabNavigator } from 'react-navigation-tabs';
-import { createStackNavigator } from 'react-navigation-stack';
+import {createBottomTabNavigator} from 'react-navigation-tabs';
+import {createStackNavigator} from 'react-navigation-stack';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 import Home from './pages/Home';
@@ -22,33 +22,36 @@ const MainNavigation = createAppContainer(
       Perfil: Home,
     },
     {
-      defaultNavigationOptions: ({ navigation }) => {
+      defaultNavigationOptions: ({navigation}) => {
         return {
-          // headerLeft: (
-          //   <View style={{justifyContent: 'center'}}>
-          //     <Image
-          //       style={{
-          //         backgroundColor: 'transparent',
-          //         tintColor: '#138646',
-          //         width: 100,
-          //         height: 40,
-          //       }}
-          //       source={require('./assets/logo.png')}
-          //     />
-          //   </View>
-          // ),
-          headerRight: (
-            <View style={{ flexDirection: 'row' }}>
+          headerLeft: (
+            <View style={{flexDirection: 'row'}}>
               <Icon
-                style={{ marginRight: 20 }}
+                style={{marginLeft: 20}}
                 name="message1"
                 size={30}
                 color="#138646"
               />
             </View>
           ),
+          headerRight: (
+            <View style={{flexDirection: 'row'}}>
+              <Icon
+                style={{marginRight: 20}}
+                name="message1"
+                size={30}
+                color="#138646"
+              />
+            </View>
+          ),
+
           headerTitle: (
-            <View style={{ justifyContent: 'center' }}>
+            <View
+              style={
+                Platform.OS === 'ios'
+                  ? {justifyContent: 'center'}
+                  : {width: 100, height: 50, flex: 1, marginLeft: '30%'}
+              }>
               <Image
                 style={{
                   width: 100,
@@ -58,6 +61,7 @@ const MainNavigation = createAppContainer(
               />
             </View>
           ),
+
           gesturesEnabled: true,
           headerStyle: {
             height: 70,
