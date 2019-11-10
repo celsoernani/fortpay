@@ -37,6 +37,10 @@ target 'Fortpay' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'FortpayTests' do
     inherit! :search_paths
     # Pods for testing
