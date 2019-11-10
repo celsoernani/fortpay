@@ -12,14 +12,30 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1404D12380754CC79B89C939 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F241621C100949B18684404D /* FontAwesome5_Regular.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* FortpayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FortpayTests.m */; };
 		37437FC0309601991E392C78 /* libPods-FortpayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1B5F80C13D686B3AD41695 /* libPods-FortpayTests.a */; };
 		39A995521B286B1F289158A3 /* libPods-Fortpay-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FE2544F58C69A77489A1D /* libPods-Fortpay-tvOS.a */; };
+		41E0661F826B4975879C1B47 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C202C7B54D74DB08695F0F1 /* FontAwesome5_Brands.ttf */; };
+		480847B9C8DF4668B3E8A58C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C67B2D7EAB948CD84898768 /* Zocial.ttf */; };
+		4826D9B82F5F40F998F1B42C /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 197B508C52654D0F93E5DBB0 /* FontAwesome5_Solid.ttf */; };
+		5A5449D66137413E80C1A864 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 395D9B900EC24E6EBF9C4A77 /* FontAwesome.ttf */; };
+		5F96232F2E824303952391A6 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F62DD3CBB57A4E478D8868AA /* Entypo.ttf */; };
 		6853093FAC925DC7986E80F0 /* libPods-Fortpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0EED6F39869707280BF78A /* libPods-Fortpay.a */; };
+		73DD9B305C834EE29CE3C689 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FFCF8864EEE48D7A36BDC33 /* AntDesign.ttf */; };
+		76406F7C41524809A6EB8FCE /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12B0F72485AA4F4594479936 /* SimpleLineIcons.ttf */; };
+		8A2969211BBE4E6EB6416D9F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B498AF8C97545F2BE7ECB79 /* MaterialIcons.ttf */; };
+		9647B7EE93604A788B0D77A4 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7E3533C523E457A8F5850FB /* Foundation.ttf */; };
+		A74494600F29491EBDF9A492 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5350BD9753BD4EE2AE0388A0 /* Octicons.ttf */; };
 		AE72255A9EA53648D2C14308 /* libPods-Fortpay-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E373B99613327ACE52DEE3D /* libPods-Fortpay-tvOSTests.a */; };
+		B88D752AD40840C99BC37CA1 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E25650B93D945E8B958509F /* Ionicons.ttf */; };
+		DB255C7BE24E48CAA434451B /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF7565C238ED461CA77233D4 /* EvilIcons.ttf */; };
+		E306762C13084D7B87894BE3 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3E6BBBDE349C3AAF289D3 /* MaterialCommunityIcons.ttf */; };
+		FAE5BBE6F79145AB8BF1F42B /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B6472E0375F4D70997FE979 /* Fontisto.ttf */; };
+		FC5F35308C8C4992BEA7B66F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73E0879AF27348CCA7E76E88 /* Feather.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +61,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FortpayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FortpayTests.m; sourceTree = "<group>"; };
 		0A86CE98FDB2AC929B000C9A /* Pods-FortpayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortpayTests.debug.xcconfig"; path = "Target Support Files/Pods-FortpayTests/Pods-FortpayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12B0F72485AA4F4594479936 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Fortpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fortpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Fortpay/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Fortpay/AppDelegate.m; sourceTree = "<group>"; };
@@ -53,20 +70,35 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Fortpay/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Fortpay/main.m; sourceTree = "<group>"; };
 		1628E043EFD2EAF9F7EC5DF5 /* Pods-Fortpay-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortpay-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Fortpay-tvOS/Pods-Fortpay-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		197B508C52654D0F93E5DBB0 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		1C202C7B54D74DB08695F0F1 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		2C67B2D7EAB948CD84898768 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Fortpay-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fortpay-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Fortpay-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fortpay-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8155DA81C588AC75DFFC44 /* Pods-Fortpay-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortpay-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Fortpay-tvOSTests/Pods-Fortpay-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2FFCF8864EEE48D7A36BDC33 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		3849C095E2AED8905DD02D20 /* Pods-Fortpay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortpay.debug.xcconfig"; path = "Target Support Files/Pods-Fortpay/Pods-Fortpay.debug.xcconfig"; sourceTree = "<group>"; };
+		395D9B900EC24E6EBF9C4A77 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		3E373B99613327ACE52DEE3D /* libPods-Fortpay-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fortpay-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5350BD9753BD4EE2AE0388A0 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		5B1B5F80C13D686B3AD41695 /* libPods-FortpayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FortpayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B498AF8C97545F2BE7ECB79 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		6B0EED6F39869707280BF78A /* libPods-Fortpay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fortpay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6472E0375F4D70997FE979 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		6E25650B93D945E8B958509F /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		70325540C292CB3DD4BAA6DC /* Pods-FortpayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortpayTests.release.xcconfig"; path = "Target Support Files/Pods-FortpayTests/Pods-FortpayTests.release.xcconfig"; sourceTree = "<group>"; };
+		73E0879AF27348CCA7E76E88 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		7BB3E6BBBDE349C3AAF289D3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		9273C4731CCEB21A0B5D2A68 /* Pods-Fortpay-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortpay-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Fortpay-tvOSTests/Pods-Fortpay-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		976676FF6629131E67E0F6C7 /* Pods-Fortpay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortpay.release.xcconfig"; path = "Target Support Files/Pods-Fortpay/Pods-Fortpay.release.xcconfig"; sourceTree = "<group>"; };
 		A17FE2544F58C69A77489A1D /* libPods-Fortpay-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fortpay-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7565C238ED461CA77233D4 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		D7E3533C523E457A8F5850FB /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		DD5D3636ABFD35E6369F409E /* Pods-Fortpay-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortpay-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Fortpay-tvOS/Pods-Fortpay-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F241621C100949B18684404D /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		F62DD3CBB57A4E478D8868AA /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +152,30 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0942501EA7EF447593A1CFEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FFCF8864EEE48D7A36BDC33 /* AntDesign.ttf */,
+				F62DD3CBB57A4E478D8868AA /* Entypo.ttf */,
+				AF7565C238ED461CA77233D4 /* EvilIcons.ttf */,
+				73E0879AF27348CCA7E76E88 /* Feather.ttf */,
+				395D9B900EC24E6EBF9C4A77 /* FontAwesome.ttf */,
+				1C202C7B54D74DB08695F0F1 /* FontAwesome5_Brands.ttf */,
+				F241621C100949B18684404D /* FontAwesome5_Regular.ttf */,
+				197B508C52654D0F93E5DBB0 /* FontAwesome5_Solid.ttf */,
+				6B6472E0375F4D70997FE979 /* Fontisto.ttf */,
+				D7E3533C523E457A8F5850FB /* Foundation.ttf */,
+				6E25650B93D945E8B958509F /* Ionicons.ttf */,
+				7BB3E6BBBDE349C3AAF289D3 /* MaterialCommunityIcons.ttf */,
+				5B498AF8C97545F2BE7ECB79 /* MaterialIcons.ttf */,
+				5350BD9753BD4EE2AE0388A0 /* Octicons.ttf */,
+				12B0F72485AA4F4594479936 /* SimpleLineIcons.ttf */,
+				2C67B2D7EAB948CD84898768 /* Zocial.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* Fortpay */ = {
@@ -181,6 +237,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				1F2C9C20719A244F18157C9C /* Pods */,
+				0942501EA7EF447593A1CFEC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -230,6 +287,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				ACDDD3882DC30B571B709AA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,7 +343,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -338,6 +396,22 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				73DD9B305C834EE29CE3C689 /* AntDesign.ttf in Resources */,
+				5F96232F2E824303952391A6 /* Entypo.ttf in Resources */,
+				DB255C7BE24E48CAA434451B /* EvilIcons.ttf in Resources */,
+				FC5F35308C8C4992BEA7B66F /* Feather.ttf in Resources */,
+				5A5449D66137413E80C1A864 /* FontAwesome.ttf in Resources */,
+				41E0661F826B4975879C1B47 /* FontAwesome5_Brands.ttf in Resources */,
+				1404D12380754CC79B89C939 /* FontAwesome5_Regular.ttf in Resources */,
+				4826D9B82F5F40F998F1B42C /* FontAwesome5_Solid.ttf in Resources */,
+				FAE5BBE6F79145AB8BF1F42B /* Fontisto.ttf in Resources */,
+				9647B7EE93604A788B0D77A4 /* Foundation.ttf in Resources */,
+				B88D752AD40840C99BC37CA1 /* Ionicons.ttf in Resources */,
+				E306762C13084D7B87894BE3 /* MaterialCommunityIcons.ttf in Resources */,
+				8A2969211BBE4E6EB6416D9F /* MaterialIcons.ttf in Resources */,
+				A74494600F29491EBDF9A492 /* Octicons.ttf in Resources */,
+				76406F7C41524809A6EB8FCE /* SimpleLineIcons.ttf in Resources */,
+				480847B9C8DF4668B3E8A58C /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +503,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACDDD3882DC30B571B709AA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fortpay/Pods-Fortpay-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fortpay/Pods-Fortpay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CBB3A5FC8841890354869C8A /* [CP] Check Pods Manifest.lock */ = {

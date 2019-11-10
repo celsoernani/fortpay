@@ -19,7 +19,6 @@ import './config/ReactotronConfig'
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
       <Routes />
     </>
   );
