@@ -4,6 +4,7 @@ import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 
 export const Container = styled.View`
+  flex:1
 
 `
 export const TitleContainer = styled.View`
@@ -45,6 +46,7 @@ export const IconContainer = styled.View`
   border-radius: 4px; 
   padding-horizontal: 10px;
   padding-vertical: 5px;
+  border-color:#138646
 `
 export const Title = styled.Text`
   font-style: normal;

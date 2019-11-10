@@ -79,7 +79,7 @@ export default class Help extends Component {
                     <TextName>{item.name}</TextName>
                   </View>
                   <IconContainer>
-                    <Icon name='chat' size={30} style={{ marginRight: 8 }} color='#00000080' />
+                    <Icon name='chat' size={30} style={{ marginRight: 8 }} color='#138646' />
                     <ChatLabel>Chat</ChatLabel>
                   </IconContainer>
                 </View>

@@ -1,13 +1,13 @@
 import React from 'react';
-import {View, Text, SafeAreaView, Image, TouchableOpacity} from 'react-native';
+import { View, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native';
 
 import {
   createAppContainer,
   createSwitchNavigator,
   createst,
 } from 'react-navigation';
-import {createBottomTabNavigator} from 'react-navigation-tabs';
-import {createStackNavigator} from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { createStackNavigator } from 'react-navigation-stack';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 import Home from './pages/Home';
@@ -17,47 +17,51 @@ import Help from './pages/Help';
 const MainNavigation = createAppContainer(
   createStackNavigator(
     {
+      Help: Help,
       Home: Home,
       Perfil: Home,
-      Help: Help,
     },
     {
-      defaultNavigationOptions: ({navigation}) => {
+      defaultNavigationOptions: ({ navigation }) => {
         return {
-          headerLeft: (
-            <View style={{justifyContent: 'center'}}>
-              <Image
-                style={{
-                  backgroundColor: 'transparent',
-                  tintColor: 'white',
-                  width: 100,
-                  height: 40,
-                }}
-                source={require('./assets/logo.png')}
-              />
-            </View>
-          ),
+          // headerLeft: (
+          //   <View style={{justifyContent: 'center'}}>
+          //     <Image
+          //       style={{
+          //         backgroundColor: 'transparent',
+          //         tintColor: '#138646',
+          //         width: 100,
+          //         height: 40,
+          //       }}
+          //       source={require('./assets/logo.png')}
+          //     />
+          //   </View>
+          // ),
           headerRight: (
-            <View style={{flexDirection: 'row'}}>
-              <TouchableOpacity
-                style={{backgroundColor: 'white', height: '60%'}}>
-                <Icon name="qrcode" size={30} color="#01261C" />
-              </TouchableOpacity>
+            <View style={{ flexDirection: 'row' }}>
               <Icon
-                style={{marginLeft: 20, marginRight: 10}}
+                style={{ marginRight: 20 }}
                 name="message1"
                 size={30}
-                color="white"
+                color="#138646"
               />
             </View>
           ),
-          // headerTitle: (
-          //   <HeaderTitleContainer />
-          // ),
+          headerTitle: (
+            <View style={{ justifyContent: 'center' }}>
+              <Image
+                style={{
+                  width: 100,
+                  height: 50,
+                }}
+                source={require('./images/logo.png')}
+              />
+            </View>
+          ),
           gesturesEnabled: true,
           headerStyle: {
             height: 70,
-            backgroundColor: '#138646',
+            backgroundColor: '#ffffff',
           },
         };
       },
