@@ -8,6 +8,7 @@ import {
   ScrollView,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
+import Tabs from './../../components/Tabs/index';
 import Carousel from 'react-native-snap-carousel';
 import {sliderWidth, itemWidth} from './SliderEntry.style';
 import SliderEntry from './../../components/Home/SliderEntry';
@@ -76,7 +77,8 @@ export default class Home extends Component {
       <SafeAreaView style={styles.container}>
         <View style={styles.container}>
           <View style={{flex: 1, backgroundColor: 'white'}}>
-            <Image
+            <Tabs />
+            {/* <Image
               style={{
                 alignSelf: 'center',
                 marginTop: '10%',
@@ -84,7 +86,7 @@ export default class Home extends Component {
                 borderWidth: 1,
               }}
               source={require('./../../assets/qr_img.png')}
-            />
+            /> */}
 
             <View style={styles.exampleContainer}>
               <Carousel
