@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, Alert} from 'react-native';
 import styles from './../../pages/Home/SliderEntry.style';
 
 export default class SliderEntry extends Component {
@@ -22,7 +22,9 @@ export default class SliderEntry extends Component {
         activeOpacity={1}
         style={styles.slideInnerContainer}
         onPress={() => {
+          title==='Minhas Faturas' ? Alert.alert("Suas Faturas") :
           title==='Apadrinhar alguém'? modal() : navigate(titleNavigation)
+
         }}>
         <View style={styles.shadow} />
 

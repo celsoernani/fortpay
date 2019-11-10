@@ -9,7 +9,7 @@ export default function Tabs() {
   return (
     <Container>
       <TabsContainer>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>Alert.alert("Suas Faturas")}>
           <TabsItens style={styles.shadow}>
             <Icon1
               name="file-document-box-multiple-outline"
