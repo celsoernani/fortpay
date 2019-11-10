@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   View,
   Text,
@@ -6,11 +6,12 @@ import {
   Image,
   TouchableOpacity,
   ScrollView,
+  StyleSheet
 } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Tabs from './../../components/Tabs/index';
 import Carousel from 'react-native-snap-carousel';
-import {sliderWidth, itemWidth} from './SliderEntry.style';
+import { sliderWidth, itemWidth } from './SliderEntry.style';
 import SliderEntry from './../../components/Home/SliderEntry';
 import styles from './styles';
 import Icon1 from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -30,7 +31,7 @@ export default class Home extends Component {
             <Icon1
               name={'file-document-box-multiple-outline'}
               size={25}
-              style={{alignSelf: 'center', marginRight: 10}}
+              style={{ alignSelf: 'center', marginRight: 10 }}
               color="white"
             />
           ),
@@ -44,7 +45,7 @@ export default class Home extends Component {
             <Icon2
               name={'users'}
               size={25}
-              style={{alignSelf: 'center', marginRight: 10}}
+              style={{ alignSelf: 'center', marginRight: 10 }}
               color="white"
             />
           ),
@@ -58,7 +59,7 @@ export default class Home extends Component {
             <Icon3
               name={'handshake-o'}
               size={25}
-              style={{alignSelf: 'center', marginRight: 10}}
+              style={{ alignSelf: 'center', marginRight: 10 }}
               color="white"
             />
           ),
@@ -68,21 +69,23 @@ export default class Home extends Component {
       ],
     };
   }
-  _renderItemWithParallax({item, index}, parallaxProps) {
+  _renderItemWithParallax({ item, index }, parallaxProps) {
     return (
-      <SliderEntry
-        data={item}
-        even={(index + 1) % 2 === 0}
-        parallax={true}
-        parallaxProps={parallaxProps}
-      />
+      <View style={styleshado.shadow}>
+        <SliderEntry
+          data={item}
+          even={(index + 1) % 2 === 0}
+          parallax={true}
+          parallaxProps={parallaxProps}
+        />
+      </View>
     );
   }
   render() {
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.container}>
-          <View style={{flex: 1, backgroundColor: 'white'}}>
+          <View style={{ flex: 1, backgroundColor: 'white' }}>
             <Tabs />
 
             <View style={styles.exampleContainer}>
@@ -110,3 +113,22 @@ export default class Home extends Component {
     );
   }
 }
+
+function elevationShadowStyle(elevation) {
+  return {
+    elevation,
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 0.5 * elevation },
+    shadowOpacity: 0.8,
+    shadowRadius: 0.8 * elevation
+  };
+}
+
+const styleshado = StyleSheet.create({
+  shadow: {
+    ...elevationShadowStyle(2),
+    backgroundColor: 'white', // It'll look weird without a background color!
+    borderRadius:10
+  }
+});
+
