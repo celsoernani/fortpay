@@ -5574,10 +5574,9 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-native-camera@^3.9.0:
+"react-native-camera@git+https://git@github.com/react-native-community/react-native-camera.git":
   version "3.9.0"
-  resolved "https://registry.npmjs.org/react-native-camera/-/react-native-camera-3.9.0.tgz#334d9d7be5476d673af4df954929958ecc36ed55"
-  integrity sha512-qUhog1yd7FQ9xRTxN1SP+T5f4uLuVY5eXx6mMlBCNsqvYSoKCWFHH1Kpil9fx7d2iOl/o09o/7kHNcSl9RkrkQ==
+  resolved "git+https://git@github.com/react-native-community/react-native-camera.git#cc3016fe437709473241b1606a55e32c0f22267b"
   dependencies:
     prop-types "^15.6.2"
 
@@ -5596,26 +5595,25 @@ react-native-linear-gradient@^2.5.6:
   resolved "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
   integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
 
-react-native-permissions@^1.1.1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/react-native-permissions/-/react-native-permissions-1.2.1.tgz#cb1f6e53b8992b3912de5a4cfc1553ac2e82d0f6"
-  integrity sha512-6NOGsA7EsuKT9hfULccQfMrsGmRhBkmN6Uv8nz2QObjEG87XtroQtw4Qi1+tAjIkSHawCeAMJp+SCtiXSGUD5Q==
+react-native-permissions@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.0.0.tgz#a18a52bb17f992deb6e48dcc6f2bcc44793cb09c"
+  integrity sha512-cUBGfV5csl0tIhYK69jqXoRyupv7eHUfg2Ua0VkAXXfLOeOxcBgPjC8/BEkUGzi3gUd+tZbwuLg/+teiPbsfcg==
 
-react-native-permissions@^2.0.3:
+react-native-permissions@^2.0.0:
   version "2.0.3"
-  resolved "https://registry.npmjs.org/react-native-permissions/-/react-native-permissions-2.0.3.tgz#b6da83e5e313e41ba5f70ff2c4567291766b0140"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.0.3.tgz#b6da83e5e313e41ba5f70ff2c4567291766b0140"
   integrity sha512-8pd+UhyphAiFGzBil5d5pDxRf/rH+20SzDNu9cFnCtoD2MbYTVH7GjXsxaZ2lPsmwrqYYbF8FBfwmncKf/G1+Q==
 
-react-native-qrcode-scanner@^1.2.3:
+react-native-qrcode-scanner@moaazsidat/react-native-qrcode-scanner#refs/pull/202/head:
   version "1.2.3"
-  resolved "https://registry.npmjs.org/react-native-qrcode-scanner/-/react-native-qrcode-scanner-1.2.3.tgz#1f3d12eb604914619458cbc996cd2e6f6a4fd759"
-  integrity sha512-YP2h95w1tXqzG9XlEHHmJujr1hRfvdDt090ofWY0v0mwvp2FLExp3tf1UybVTt4whmarjdk2BYkkyU863Ffung==
+  resolved "https://codeload.github.com/moaazsidat/react-native-qrcode-scanner/tar.gz/1a842ef69eda9b920533a4332bf3ffa0be35ecf5"
   dependencies:
     "@react-native-community/async-storage" "^1.6.1"
     opencollective "^1.0.3"
     opencollective-postinstall "^2.0.2"
     prop-types "^15.5.10"
-    react-native-permissions "^1.1.1"
+    react-native-permissions "^2.0.0"
 
 react-native-reanimated@^1.4.0:
   version "1.4.0"

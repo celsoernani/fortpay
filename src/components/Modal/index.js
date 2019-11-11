@@ -17,6 +17,7 @@ export default class MoldalFP extends React.Component {
               onRequestClose={this.props.hide}
             >
               <TouchableOpacity
+                style={{marginTop:30}}
                 onPress={this.props.hide}
                 hitSlop={{top: 15, left: 15, bottom: 15, right: 15}}
               >

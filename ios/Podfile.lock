@@ -184,6 +184,14 @@ PODS:
     - React-cxxreact (= 0.61.4)
     - React-jsi (= 0.61.4)
   - React-jsinspector (0.61.4)
+  - react-native-camera (3.9.0):
+    - React
+    - react-native-camera/RCT (= 3.9.0)
+    - react-native-camera/RN (= 3.9.0)
+  - react-native-camera/RCT (3.9.0):
+    - React
+  - react-native-camera/RN (3.9.0):
+    - React
   - React-RCTActionSheet (0.61.4):
     - React-Core/RCTActionSheetHeaders (= 0.61.4)
   - React-RCTAnimation (0.61.4):
@@ -219,6 +227,8 @@ PODS:
     - React-cxxreact (= 0.61.4)
     - React-jsi (= 0.61.4)
     - ReactCommon/jscallinvoker (= 0.61.4)
+  - RNCAsyncStorage (1.6.2):
+    - React
   - RNGestureHandler (1.5.0):
     - React
   - RNReanimated (1.4.0):
@@ -246,6 +256,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-camera (from `../node_modules/react-native-camera`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -257,6 +268,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -295,6 +307,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-camera:
+    :path: "../node_modules/react-native-camera"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -315,6 +329,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-community/async-storage"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -341,6 +357,7 @@ SPEC CHECKSUMS:
   React-jsi: ca921f4041505f9d5197139b2d09eeb020bb12e8
   React-jsiexecutor: 8dfb73b987afa9324e4009bdce62a18ce23d983c
   React-jsinspector: d15478d0a8ada19864aa4d1cc1c697b41b3fa92f
+  react-native-camera: c529629e3ecd017dcdacfd0355576ef489d9d198
   React-RCTActionSheet: 7369b7c85f99b6299491333affd9f01f5a130c22
   React-RCTAnimation: d07be15b2bd1d06d89417eb0343f98ffd2b099a7
   React-RCTBlob: 8e0b23d95c9baa98f6b0e127e07666aaafd96c34
@@ -351,11 +368,12 @@ SPEC CHECKSUMS:
   React-RCTText: 21934e0a51d522abcd0a275407e80af45d6fd9ec
   React-RCTVibration: 0f76400ee3cec6edb9c125da49fed279340d145a
   ReactCommon: a6a294e7028ed67b926d29551aa9394fd989c24c
+  RNCAsyncStorage: 60a80e72d95bf02a01cace55d3697d9724f0d77f
   RNGestureHandler: a4ddde1ffc6e590c8127b8b7eabfdade45475c74
   RNReanimated: b2ab0b693dddd2339bd2f300e770f6302d2e960c
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
-PODFILE CHECKSUM: 87b883db7026ac981153bd6c9af5b977dc28e0ff
+PODFILE CHECKSUM: 2a0404deb55c7eaa9d1c1a065d577130cbc94c90
 
 COCOAPODS: 1.8.4

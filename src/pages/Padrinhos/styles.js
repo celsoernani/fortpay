@@ -26,19 +26,12 @@ export const Card = styled.View`
 border-width: 1;
 border-radius: 2;
 border-color: #ddd;
-border-bottom-width: 0;
-shadow-color: #000;
-shadow-offset: {width: 0, height: 2};
-shadow-opacity: 0.8;
-shadow-radius: 2;
-elevation: 1;
 margin-left: 5;
 margin-right: 5;
 margin-top: 10;
 `;
 
 export const TextName = styled.Text`
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.025;
@@ -46,7 +39,6 @@ export const TextName = styled.Text`
   color: #00000099;
 `;
 export const TextCard = styled.Text`
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.025;
@@ -55,14 +47,12 @@ export const TextCard = styled.Text`
 `;
 
 export const TextSubtitle = styled.Text`
-  font-style: normal;
   font-size: 15px;
   letter-spacing: 0.025;
   color: #00000099;
   padding: 5px;
 `;
 export const ChatLabel = styled.Text`
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
@@ -79,7 +69,6 @@ export const IconContainer = styled.View`
   border-color: #138646;
 `;
 export const Title = styled.Text`
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;

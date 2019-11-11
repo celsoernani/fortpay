@@ -38,7 +38,6 @@ margin-top: 10;
 `;
 
 export const TextName = styled.Text`
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.025;
@@ -46,7 +45,6 @@ export const TextName = styled.Text`
   color: #00000099;
 `;
 export const TextCard = styled.Text`
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.025;
@@ -55,14 +53,12 @@ export const TextCard = styled.Text`
 `;
 
 export const TextSubtitle = styled.Text`
-  font-style: normal;
   font-size: 15px;
   letter-spacing: 0.025;
   color: #00000099;
   padding: 5px;
 `;
 export const ChatLabel = styled.Text`
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
@@ -79,7 +75,6 @@ export const IconContainer = styled.View`
   border-color: #138646;
 `;
 export const Title = styled.Text`
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;

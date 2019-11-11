@@ -86,7 +86,6 @@ export default class NovoPadrinho extends Component {
           ItemSeparatorComponent={this.renderSeparator}
           keyExtractor={item => String(item.id)}
           renderItem={({ item, id }) => {
-            console.tron.log('teste', item)
             return (
               <TouchableOpacity>
                 <View
